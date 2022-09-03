@@ -14,7 +14,7 @@ Level Progression (Start)
 The player plays through 9 levels in chronological order. If they are able to beat all the levels without fail, they are rewarded with a ***HAPPY PIG?? If, at any point, the player loses all of their lives, they will be sent to a game over screen ***FEATURING
 
 
-Some Cool (new) Features:
+### Some Cool (new) Features:
 
 Power-ups:
 I added 10 power-ups that take the form of colored icons that drop from blocks when destroyed. 
