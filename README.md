@@ -16,7 +16,6 @@ The player plays through 9 levels in chronological order. If they are able to be
 
 ### Some Cool (new) Features:
 
-Power-ups:
 I added 10 power-ups that take the form of colored icons that drop from blocks when destroyed. 
 - 
 
