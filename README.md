@@ -21,8 +21,6 @@ The bar has 5 sections. Depending on where the ball strikes the bar, the ball wi
 ### Powerups:
 I added 10 power-ups that take the form of colored sphere icons that drop from blocks when destroyed. A random power-up is generated upon destruction of a block. The Powerup object contatins private instance variable type that determines what the power-up does and what color it is. Here is a list of power-ups in the game:
 
-Opposite bar:
-
   	 * Bar goes in opposite direction 
 	 * Bar becomes longer
 	 * Number of balls increase
