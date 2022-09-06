@@ -3,6 +3,8 @@ The Full Brick Breaker Experience + Extra Power-ups
 
 This desktop app is designed to emulate the classic game of Brick Breaker with some added features (detailed below).
 
+
+
 ## What is Brick Breaker?
 Brick Breaker is a game in which the player controls a bar at the bottom of the screen that can be moved horizontally. At the beginning of each round, a ball is launched from the bar and bounces off the walls, blocks, and bar, destroying some blocks in the process. The player is given 3 lives at the start of the round, but will lose one every time the ball hits the bottom of the screen without bouncing up from the bar. The objective is to destroy all the breakable blocks. In many versions, there are also various power-ups that drop from the blocks once broken and can be picked up my the bar.
 
@@ -33,18 +35,27 @@ I added 10 power-ups that take the form of colored sphere icons that drop from b
 	 * Bar catches ball, re-launch with spacebar
 
 
-### How physics of the game work?
+
+### How does physics of the game work?
 The ball contains deltaX and deltaY variables that determine the amount of pixels it moves each frame, directed by the angle at which it is launched. To avoid the ball going faster when moving diagonally, the location updating function takes into account the normal pixels per update and uses a Pythagorean-esk method of calculating the changes in x and y. 
 
 When the ball hits a wall, the x or y velocity is simply assigned to its opposite to account for a bounce, according to which wall (left, top, and right) it is touching. 
 
 When the ball hits a block, it will trigger the bounce() method within that block. To determine the direction in which the ball hits the block (as that directly correlates with whether to change the x or y sign), I use a while loop that slowly increments towards the block from the last coordinates of the ball prior to it touching the block. Depending on the original signs of the x y trajectories of the ball, it will increment until on the edge of the block and determine from which plane the ball is closest to the brick. 
 
-The block/brick and bar objects are updated and repainted upon contact with the ball.
+The block/brick and bar objects are updated and repainted upon contact with the ball. Below shows a game in action:
+
+<img width="1439" alt="brickbreaker" src="https://user-images.githubusercontent.com/103232379/188539081-320371ea-aea6-48c2-9cdc-3e4fc2306dc6.png">
 
 ## How to use:
 
 Upon starting the code, the user is brought to a title screen featuring three options. Upon clicking "Key", the user is brought to an index of power-ups and their associated colors. Upon clicking "Start", the user is brought to the first level in a progression of 9 levels. If they are able to beat all the levels without losing all of their lives, they are rewarded with a "YOU WIN" screen. If, at any point, the player loses all of their lives, they will be sent to a "GAME OVER" screen. Upon clicking "Choose Level", the user is brought to a level choosing screen where they can choose which level they want to play. This screen also includes a "secret level". If this is clicked, the user is brought to a power-up choosing screen, where the user may choose a power-up to start with when they begin the level.
+
+<img width="1189" alt="Screen Shot 2022-09-05 at 9 58 14 PM" src="https://user-images.githubusercontent.com/103232379/188538915-5fe49352-7975-42ac-be8f-37f10064f180.png">
+
+<img width="1189" alt="Screen Shot 2022-09-05 at 9 58 20 PM" src="https://user-images.githubusercontent.com/103232379/188538854-44da0435-4daf-40c7-ba44-b51b2a727937.png">
+
+<img width="1189" alt="Screen Shot 2022-09-05 at 9 58 44 PM" src="https://user-images.githubusercontent.com/103232379/188538889-674dbe89-f64c-45c7-a278-6be31610480d.png">
 
 ### Controls:
 Spacebar = launch ball / fire lasers
