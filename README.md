@@ -23,7 +23,7 @@ I added 10 power-ups that take the form of colored sphere icons that drop from b
 
 Opposite bar:
 
-   * Bar goes in opposite direction 
+  	 * Bar goes in opposite direction 
 	 * Bar becomes longer
 	 * Number of balls increase
 	 * Ball's power doubles (breaks through 2 levels of strength when it hits a brick)
