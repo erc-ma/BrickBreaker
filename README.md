@@ -34,7 +34,7 @@ I added 10 power-ups that take the form of colored sphere icons that drop from b
 
 
 ### How physics of the game work?
-The ball moves a constant amount of pixels directed by the angle at which it is launched. To avoid the ball going faster when moving diagonally, the location updating function takes into account the normal pixels per update and uses a Pythagorean-esk method of calculating the changes in x and y. 
+The ball contains deltaX and deltaY variables that determine the amount of pixels it moves each frame, directed by the angle at which it is launched. To avoid the ball going faster when moving diagonally, the location updating function takes into account the normal pixels per update and uses a Pythagorean-esk method of calculating the changes in x and y. 
 
 When the ball hits a wall, the x or y velocity is simply assigned to its opposite to account for a bounce, according to which wall (left, top, and right) it is touching. 
 
